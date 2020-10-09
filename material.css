@@ -3,7 +3,6 @@ html {
   font: $font_sizepx $font_face;
   height: 100%;
   overflow: hidden;
-  background: $background_color;
 }
 
 #log {
