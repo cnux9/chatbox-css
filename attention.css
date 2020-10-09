@@ -1,48 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 
+#log,
 body,
 html {
-  font: $font_sizepx "Jua";
   overflow: hidden;
-  background: $background_color;
 }
 
 #log {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 24px;
+  padding: 16px 32px;
   background-color: #000000aa;
   box-sizing: border-box;
+  font-family: "Jua", sans-serif;
   width: 100%;
 }
 
 #log > div {
-  margin: 8px;
+  margin: 10px 0;
   letter-spacing: -3px;
+  font-size: 50px;
+  font-weight: 900;
   color: #323232;
   animation: rotateInUpLeft 0.5s ease;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(-60deg);
-    transform-origin: 100% 0%;
-  }
-  100 {
-    transform: rotate(0deg);
-    transform-origin: 0% 0%;
-  }
-}
-
-.colon,
-.badge {
-  display: none;
-}
-
 .name {
-  display: block;
-  font-weight: 900;
+  display: inline-block;
   font-style: italic;
   filter: hue-rotate(90deg) contrast(2);
   text-shadow: rgb(255, 255, 255) 4px 3px 3px,
@@ -105,17 +90,27 @@ html {
 }
 
 .message {
-  display: inline-block;
-  font-weight: 900;
+  display: block;
   color: white;
-  text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px,
-    rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px,
-    rgb(0, 0, 0) -0.832294px 1.81859px 0px,
-    rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97999px 0.28224px 0px,
-    rgb(0, 0, 0) -1.87291px -0.701566px 0px,
-    rgb(0, 0, 0) -1.30729px -1.51361px 0px,
-    rgb(0, 0, 0) -0.421592px -1.95506px 0px,
-    rgb(0, 0, 0) 0.567324px -1.91785px 0px,
-    rgb(0, 0, 0) 1.41734px -1.41108px 0px,
-    rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+  text-shadow: 1px 1px 0.2px black, -1px 1px 0.2px black, 1px -1px 0.2px black,
+    -1px -1px 0.2px black, 0px 1px 0.2px black, 0px -1px 0.2px black,
+    -1px 0px 0.2px black, 1px 0px 0.2px black, 2px 2px 0.2px black,
+    -2px 2px 0.2px black, 2px -2px 0.2px black, -2px -2px 0.2px black,
+    0px 2px 0.2px black, 0px -2px 0.2px black, -2px 0px 0.2px black,
+    2px 0px 0.2px black, 1px 2px 0.2px black, -1px 2px 0.2px black,
+    1px -2px 0.2px black, -1px -2px 0.2px black, 2px 1px 0.2px black,
+    -2px 1px 0.2px black, 2px -1px 0.2px black, -2px -1px 0.2px black;
+  line-height: 1.2;
+}
+
+.colon {
+  display: none;
+}
+
+.badge {
+  margin-right: 10px;
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  height: 1em;
 }
