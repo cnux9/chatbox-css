@@ -1,0 +1,104 @@
+body,
+html {
+  font: 36px $font_face;
+  height: 100%;
+  overflow: hidden;
+  background: $background_color;
+}
+
+#log {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  width: 100%;
+  background: #000000aa;
+}
+
+#log > div {
+  word-wrap: break-word;
+  line-height: 150%;
+  padding: 0 8px;
+  color: white;
+}
+
+#log > div.deleted {
+  visibility: hidden;
+}
+
+#log .emote_wrap {
+  position: relative;
+}
+
+#log .emote_wrap img.emoticon {
+  height: 36px;
+  vertical-align: middle;
+  margin: -5px 0;
+}
+
+#log .meta {
+  margin-right: 8px;
+  padding-right: 2px;
+  background-color: red;
+}
+
+.badge,
+.colon {
+  display: none;
+}
+
+.name {
+  padding: 4px;
+  font-weight: 600;
+  color: white;
+}
+
+span.message > img {
+  height: 1em;
+}
+
+.meta[style="color: #FF0000"] {
+  background-color: #ff5517 !important;
+}
+.meta[style="color: #0000FF"] {
+  background-color: #d515eb !important;
+}
+.meta[style="color: #008000"] {
+  background-color: #fa4d91 !important;
+}
+.meta[style="color: #B22222"] {
+  background-color: darkorange !important;
+}
+.meta[style="color: #FF7F50"] {
+  background-color: #00b159 !important;
+}
+.meta[style="color: #9ACD32"] {
+  background-color: red !important;
+}
+.meta[style="color: #FF4500"] {
+  background-color: #ff0061 !important;
+}
+.meta[style="color: #2E8B57"] {
+  background-color: #005bdb !important;
+}
+.meta[style="color: #DAA520"] {
+  background-color: #52cc52 !important;
+}
+.meta[style="color: #D2691E"] {
+  background-color: #cee000 !important;
+}
+.meta[style="color: #5F9EA0"] {
+  background-color: #ffc425 !important;
+}
+.meta[style="color: #1E90FF"] {
+  background-color: deeppink !important;
+}
+.meta[style="color: #FF69B4"] {
+  background-color: darkslategray !important;
+}
+.meta[style="color: #8A2BE2"] {
+  background-color: yellowgreen !important;
+}
+.meta[style="color: #00FF7F"] {
+  background-color: #47cfd1 !important;
+}

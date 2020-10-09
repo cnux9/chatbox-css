@@ -1,0 +1,83 @@
+body,
+html {
+  font: $font_sizepx $font_face;
+  height: 100%;
+  overflow: hidden;
+  background: $background_color;
+}
+
+#log {
+  margin: 20px;
+  padding: 32px 16px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  background: #ffffffee;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#log > div {
+  margin: 4px 0;
+  word-wrap: break-word;
+  animation: mask 0.5s ease, fadeInUp 0.5s ease;
+}
+
+@keyframes mask {
+  0% {
+    clip-path: circle(0%);
+  }
+  100% {
+    clip-path: circle(100%);
+  }
+}
+
+#log > div.deleted {
+  visibility: hidden;
+}
+
+#log .emote_wrap {
+  position: relative;
+}
+
+#log .emote_wrap img.emoticon {
+  height: $font_sizepx;
+  vertical-align: middle;
+  margin: -5px 0;
+}
+
+.meta {
+  font-size: 0.6em;
+}
+
+.colon,
+.badge {
+  display: none;
+}
+
+.name::before {
+  margin: 0 5px;
+  vertical-align: middle;
+  content: "●";
+  color: #86f08a;
+  font-size: 0.8em;
+}
+
+.name {
+  margin: 0.4em;
+  display: inline-block;
+  font-weight: 900;
+  color: dimgray;
+}
+
+.message {
+  display: block;
+  background: #86c9f0ee;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  color: white;
+}
+
+span.message > img {
+  height: 1em;
+}
